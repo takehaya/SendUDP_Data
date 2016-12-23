@@ -1,0 +1,6 @@
+framework module Pods_SendUDP_Data {
+  umbrella header "Pods-SendUDP_Data-umbrella.h"
+
+  export *
+  module * { export * }
+}

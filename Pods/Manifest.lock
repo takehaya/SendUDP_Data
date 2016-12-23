@@ -1,0 +1,12 @@
+PODS:
+  - SwiftSocket (2.0)
+
+DEPENDENCIES:
+  - SwiftSocket
+
+SPEC CHECKSUMS:
+  SwiftSocket: 279de0cc1629ccbf37a475f5d96be30024394d8d
+
+PODFILE CHECKSUM: 7f25b3b8c43e377123db241235abcbe423fbecc1
+
+COCOAPODS: 1.1.1

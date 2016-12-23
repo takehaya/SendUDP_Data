@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SendUDP_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI4-R2-PIm">
+                                <rect key="frame" x="20" y="40" width="528" height="30"/>
+                                <color key="backgroundColor" red="0.52777501126334236" green="1" blue="0.5110809761421915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="rHP-y3-U2b"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="u7g-PJ-cCn"/>
+                                </constraints>
+                                <state key="normal" title="LED点灯">
+                                    <color key="titleColor" red="1" green="0.37144798740821805" blue="0.68367794144085003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="68" minValue="0.0" maxValue="128" translatesAutoresizingMaskIntoConstraints="NO" id="nv3-cE-IY9">
+                                <rect key="frame" x="18" y="177" width="251.5" height="9"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="45" minValue="0.0" maxValue="90" translatesAutoresizingMaskIntoConstraints="NO" id="inS-cp-MSz">
+                                <rect key="frame" x="304" y="177" width="245.5" height="9"/>
+                                <color key="minimumTrackTintColor" red="0.52777501130000004" green="1" blue="0.51108097610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.94901960784313721" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="inS-cp-MSz" firstAttribute="width" secondItem="nv3-cE-IY9" secondAttribute="width" constant="-6" id="8IB-IW-9q0"/>
+                            <constraint firstItem="inS-cp-MSz" firstAttribute="leading" secondItem="nv3-cE-IY9" secondAttribute="trailing" constant="39" id="94P-pM-oje"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="inS-cp-MSz" secondAttribute="bottom" constant="135" id="BhT-32-T5K"/>
+                            <constraint firstItem="nv3-cE-IY9" firstAttribute="top" secondItem="dI4-R2-PIm" secondAttribute="bottom" constant="107" id="GM9-um-sgq"/>
+                            <constraint firstItem="dI4-R2-PIm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Hku-FS-0Ap"/>
+                            <constraint firstItem="dI4-R2-PIm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="atj-4J-IH5"/>
+                            <constraint firstItem="inS-cp-MSz" firstAttribute="top" secondItem="dI4-R2-PIm" secondAttribute="bottom" constant="107" id="p8m-rB-1zz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="inS-cp-MSz" secondAttribute="trailing" id="v9y-K7-m5T"/>
+                            <constraint firstItem="inS-cp-MSz" firstAttribute="height" secondItem="nv3-cE-IY9" secondAttribute="height" id="veC-CX-oHU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="nv3-cE-IY9" secondAttribute="leading" id="xu5-WM-QZf"/>
+                            <constraint firstItem="dI4-R2-PIm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ylG-vs-gHy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="front_and_behind_slider" destination="nv3-cE-IY9" id="HKF-wK-5B5"/>
+                        <outlet property="right_and_left_slider" destination="inS-cp-MSz" id="IyW-h2-dgm"/>
+                        <outlet property="senddataButton" destination="dI4-R2-PIm" id="Sas-TH-tFV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.5832083958021" y="135.19999999999999"/>
+        </scene>
+    </scenes>
+</document>

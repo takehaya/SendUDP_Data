@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		068D90EF3557BCB8F1061C63E20EF15E /* Pods-SendUDP_Data-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF7FB7675805354A40BDCAA1E77394D /* Pods-SendUDP_Data-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		110A01B538BC429BE629D2AFD29FDCFF /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 6E9410F7757FFB8E3F36480CFCBA91C8 /* Info.plist */; };
+		17B5D95B8BE3D96DD19AE4AA39831583 /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC0597EFF5B904AFC8F2B7E70A9B71 /* UDPClient.swift */; };
+		1A03FA69B39B67A395A3C32A5CAC91D8 /* SwiftSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F3BD8D59FDAD8BB026395DD89E3DAAB2 /* SwiftSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32087B3B6A179D4EBCC9D664029799DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		48298B485971B89ACEA54C66CB599E53 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FCFC74C961D741D73B7D90B1F234D7 /* TCPClient.swift */; };
+		4CF7DDB36842C46531534A50523EEF79 /* Pods-SendUDP_DataUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F429954D2AC8BDE99A93D5CFBDCB6FEE /* Pods-SendUDP_DataUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D311BC965D40A76F01863293330A864 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		669011D3A4F7DA590B6B64B6366B8875 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7288A386ADFA7FFCC21DE90C3F569614 /* Socket.swift */; };
+		84EBD0E112C62E915E9E07E3B104FEAD /* Pods-SendUDP_DataUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40356765CA1463F1049C5BFB5CDECD2C /* Pods-SendUDP_DataUITests-dummy.m */; };
+		9C9918F4E0A548C851C4A25B7BBC9CB0 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = FC292F2E377FED791DD3CAADE6CF15AC /* ytcpsocket.c */; };
+		A2E9F1683115B42A376EB70157219BDC /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE370F86C7B1DF357FA951576EEBBB /* SwiftSocket-dummy.m */; };
+		BC044D63F406E719E16BE1C536D4E898 /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B75B87EB79439A4B3DF29E1A293455 /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF6CBB2E0DA0D05AF04F3BCDB9DC922E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C1713576E54F76950BE73C47D2B5DDE2 /* Pods-SendUDP_DataTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F46E783B9B0566446344A2F8D1356CA5 /* Pods-SendUDP_DataTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBB0DEE67B1F2371C5DBC9DE1A74DD59 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8558C2C93EC67336517F52A86C32BC /* Result.swift */; };
+		E9B80C393CDCF98F29D35E39463D2144 /* Pods-SendUDP_DataTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 286C78A9D5A0E59C4FD895C5E10092B8 /* Pods-SendUDP_DataTests-dummy.m */; };
+		EBE2F8C523BFF10D680485823FD4EA1E /* Pods-SendUDP_Data-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A27C25FA52219AC2242B42AFDFF2C803 /* Pods-SendUDP_Data-dummy.m */; };
+		ED0DC802B40AE0091E5E2B8C9C26E4F5 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D752082113C0BFD4E10773B9E78F843 /* yudpsocket.c */; };
+		FAD81B5938C2E716F182E210F1C8A3D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		920079318FBF65B8C215A0F13282DB47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F665F3EB2D2137B5E4657D20D6431356;
+			remoteInfo = SwiftSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01DD3A0A71B49FAACD87F9DDBEB6D80E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C7B3303FBC7314C5D3C2DE406B1212E /* Pods_SendUDP_DataUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SendUDP_DataUITests.framework; path = "Pods-SendUDP_DataUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BAC0597EFF5B904AFC8F2B7E70A9B71 /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
+		2010BC7304DA495769AD0FE2B12F1F03 /* Pods_SendUDP_DataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SendUDP_DataTests.framework; path = "Pods-SendUDP_DataTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		286C78A9D5A0E59C4FD895C5E10092B8 /* Pods-SendUDP_DataTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SendUDP_DataTests-dummy.m"; sourceTree = "<group>"; };
+		2D55F264722494112CD54E2C28F0EA82 /* Pods-SendUDP_DataTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SendUDP_DataTests-frameworks.sh"; sourceTree = "<group>"; };
+		2F8558C2C93EC67336517F52A86C32BC /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
+		3BE01A4461C614D366018FA60FFDF3A7 /* Pods-SendUDP_DataTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SendUDP_DataTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		40356765CA1463F1049C5BFB5CDECD2C /* Pods-SendUDP_DataUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SendUDP_DataUITests-dummy.m"; sourceTree = "<group>"; };
+		41C00507D0A42F211B582B2E97B2D0EC /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSocket.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B75B87EB79439A4B3DF29E1A293455 /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
+		4C118F1051AEFCDF1F722EDA4C538551 /* Pods-SendUDP_DataUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendUDP_DataUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D0CB38F5508CE0DDA1E809D8C30E218 /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
+		5B328F220B5B0B4266E762855E5E58DA /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
+		6188EE1A0A164E5491A1E182FB78D05B /* Pods-SendUDP_Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendUDP_Data.release.xcconfig"; sourceTree = "<group>"; };
+		61F40EA3895C104D9BFC39EE38C89EF0 /* Pods-SendUDP_Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendUDP_Data.debug.xcconfig"; sourceTree = "<group>"; };
+		6E9410F7757FFB8E3F36480CFCBA91C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
+		7288A386ADFA7FFCC21DE90C3F569614 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
+		7944BB7FCD21434E1B1CF596BD826708 /* Pods-SendUDP_Data-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SendUDP_Data-frameworks.sh"; sourceTree = "<group>"; };
+		7D1BF8007691E3386871147FE20E1FCE /* Pods-SendUDP_Data.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SendUDP_Data.modulemap"; sourceTree = "<group>"; };
+		7D752082113C0BFD4E10773B9E78F843 /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
+		7DDD12A09E06A57E5ED0680058B3A2DD /* Pods-SendUDP_Data-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SendUDP_Data-resources.sh"; sourceTree = "<group>"; };
+		7ECE370F86C7B1DF357FA951576EEBBB /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
+		7F60D7701533F5F02EA9FBF6ACBC645D /* Pods-SendUDP_DataUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SendUDP_DataUITests.modulemap"; sourceTree = "<group>"; };
+		811BFEBD71A8E82D29379FAD1ABF99B3 /* Pods-SendUDP_DataUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SendUDP_DataUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97E63EF259863847F5CBDA8B11BC2C93 /* Pods_SendUDP_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SendUDP_Data.framework; path = "Pods-SendUDP_Data.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7E79C821996F9077658C6E97ADEB36 /* Pods-SendUDP_Data-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendUDP_Data-acknowledgements.plist"; sourceTree = "<group>"; };
+		A27C25FA52219AC2242B42AFDFF2C803 /* Pods-SendUDP_Data-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SendUDP_Data-dummy.m"; sourceTree = "<group>"; };
+		A524735DED3EE31F900B610B08792921 /* Pods-SendUDP_DataUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SendUDP_DataUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B12A320E58178A099F7F9D76D81D3433 /* Pods-SendUDP_Data-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SendUDP_Data-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6F5FB36DA133E0D2643AF0EF4162D5F /* Pods-SendUDP_DataTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SendUDP_DataTests-resources.sh"; sourceTree = "<group>"; };
+		BD1A72025FC8829D7ADD3ABC519E0B41 /* Pods-SendUDP_DataTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SendUDP_DataTests.modulemap"; sourceTree = "<group>"; };
+		C73F536DFB1FE7CEC010FBF6221D6DA5 /* Pods-SendUDP_DataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendUDP_DataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA15CD033532B985395263B8C4EC0791 /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
+		CB360F82418F378BF3BE87016751FF16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DBF7FB7675805354A40BDCAA1E77394D /* Pods-SendUDP_Data-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SendUDP_Data-umbrella.h"; sourceTree = "<group>"; };
+		E126EFDA6600FA9D41378E85E98FD9B9 /* Pods-SendUDP_DataUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendUDP_DataUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8DA0760A820367874712CA93C36320E /* Pods-SendUDP_DataUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendUDP_DataUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E93EBBA9272D467761601C172A7C5CD9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC612ECE145580EFEF6FB8BE3DA7685 /* Pods-SendUDP_DataUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SendUDP_DataUITests-resources.sh"; sourceTree = "<group>"; };
+		EF3CC6BF96D9302CDF40B52684D99D59 /* Pods-SendUDP_DataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendUDP_DataTests.release.xcconfig"; sourceTree = "<group>"; };
+		F3BD8D59FDAD8BB026395DD89E3DAAB2 /* SwiftSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSocket.h; path = Sources/SwiftSocket.h; sourceTree = "<group>"; };
+		F429954D2AC8BDE99A93D5CFBDCB6FEE /* Pods-SendUDP_DataUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SendUDP_DataUITests-umbrella.h"; sourceTree = "<group>"; };
+		F46E783B9B0566446344A2F8D1356CA5 /* Pods-SendUDP_DataTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SendUDP_DataTests-umbrella.h"; sourceTree = "<group>"; };
+		F8FCFC74C961D741D73B7D90B1F234D7 /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
+		FC292F2E377FED791DD3CAADE6CF15AC /* ytcpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
+		FDB29A9D04DCD5AC6D00ADB534E7FA90 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE76B7EE3B092C88AD3F0BF3F2373D6E /* Pods-SendUDP_DataTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendUDP_DataTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2585D9361D23DD555D86861434489DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD81B5938C2E716F182E210F1C8A3D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566F72EBFE0C54AC4A7CC099E02B6D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D311BC965D40A76F01863293330A864 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E641809A50FDB9DDFF31DBCD1CA3C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32087B3B6A179D4EBCC9D664029799DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5EB56885E268F2788C3C83976E827EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6CBB2E0DA0D05AF04F3BCDB9DC922E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1676C37B382AC5D9ED33797D44D73B6E /* SwiftSocket */ = {
+			isa = PBXGroup;
+			children = (
+				6E9410F7757FFB8E3F36480CFCBA91C8 /* Info.plist */,
+				2F8558C2C93EC67336517F52A86C32BC /* Result.swift */,
+				7288A386ADFA7FFCC21DE90C3F569614 /* Socket.swift */,
+				F3BD8D59FDAD8BB026395DD89E3DAAB2 /* SwiftSocket.h */,
+				F8FCFC74C961D741D73B7D90B1F234D7 /* TCPClient.swift */,
+				1BAC0597EFF5B904AFC8F2B7E70A9B71 /* UDPClient.swift */,
+				FC292F2E377FED791DD3CAADE6CF15AC /* ytcpsocket.c */,
+				7D752082113C0BFD4E10773B9E78F843 /* yudpsocket.c */,
+				FD062BAFDBCFA371148EEECB3B3AE184 /* Support Files */,
+			);
+			name = SwiftSocket;
+			path = SwiftSocket;
+			sourceTree = "<group>";
+		};
+		52017073552A9D7449192455EE059D87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1676C37B382AC5D9ED33797D44D73B6E /* SwiftSocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		54CD0E4C99A7D78370AD1CDA67B0DF3C /* Pods-SendUDP_DataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB29A9D04DCD5AC6D00ADB534E7FA90 /* Info.plist */,
+				7F60D7701533F5F02EA9FBF6ACBC645D /* Pods-SendUDP_DataUITests.modulemap */,
+				811BFEBD71A8E82D29379FAD1ABF99B3 /* Pods-SendUDP_DataUITests-acknowledgements.markdown */,
+				E8DA0760A820367874712CA93C36320E /* Pods-SendUDP_DataUITests-acknowledgements.plist */,
+				40356765CA1463F1049C5BFB5CDECD2C /* Pods-SendUDP_DataUITests-dummy.m */,
+				A524735DED3EE31F900B610B08792921 /* Pods-SendUDP_DataUITests-frameworks.sh */,
+				EBC612ECE145580EFEF6FB8BE3DA7685 /* Pods-SendUDP_DataUITests-resources.sh */,
+				F429954D2AC8BDE99A93D5CFBDCB6FEE /* Pods-SendUDP_DataUITests-umbrella.h */,
+				E126EFDA6600FA9D41378E85E98FD9B9 /* Pods-SendUDP_DataUITests.debug.xcconfig */,
+				4C118F1051AEFCDF1F722EDA4C538551 /* Pods-SendUDP_DataUITests.release.xcconfig */,
+			);
+			name = "Pods-SendUDP_DataUITests";
+			path = "Target Support Files/Pods-SendUDP_DataUITests";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				52017073552A9D7449192455EE059D87 /* Pods */,
+				9D213A29B4502132CB93F4D0E043DE27 /* Products */,
+				980C1733E0C983047172B196F062AC71 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		980C1733E0C983047172B196F062AC71 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1C79C2CDC0EDA5505185DDB6F8558D9 /* Pods-SendUDP_Data */,
+				C14ED585908BBDE37D0B385C1BA93772 /* Pods-SendUDP_DataTests */,
+				54CD0E4C99A7D78370AD1CDA67B0DF3C /* Pods-SendUDP_DataUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9D213A29B4502132CB93F4D0E043DE27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97E63EF259863847F5CBDA8B11BC2C93 /* Pods_SendUDP_Data.framework */,
+				2010BC7304DA495769AD0FE2B12F1F03 /* Pods_SendUDP_DataTests.framework */,
+				0C7B3303FBC7314C5D3C2DE406B1212E /* Pods_SendUDP_DataUITests.framework */,
+				41C00507D0A42F211B582B2E97B2D0EC /* SwiftSocket.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C14ED585908BBDE37D0B385C1BA93772 /* Pods-SendUDP_DataTests */ = {
+			isa = PBXGroup;
+			children = (
+				E93EBBA9272D467761601C172A7C5CD9 /* Info.plist */,
+				BD1A72025FC8829D7ADD3ABC519E0B41 /* Pods-SendUDP_DataTests.modulemap */,
+				3BE01A4461C614D366018FA60FFDF3A7 /* Pods-SendUDP_DataTests-acknowledgements.markdown */,
+				FE76B7EE3B092C88AD3F0BF3F2373D6E /* Pods-SendUDP_DataTests-acknowledgements.plist */,
+				286C78A9D5A0E59C4FD895C5E10092B8 /* Pods-SendUDP_DataTests-dummy.m */,
+				2D55F264722494112CD54E2C28F0EA82 /* Pods-SendUDP_DataTests-frameworks.sh */,
+				B6F5FB36DA133E0D2643AF0EF4162D5F /* Pods-SendUDP_DataTests-resources.sh */,
+				F46E783B9B0566446344A2F8D1356CA5 /* Pods-SendUDP_DataTests-umbrella.h */,
+				C73F536DFB1FE7CEC010FBF6221D6DA5 /* Pods-SendUDP_DataTests.debug.xcconfig */,
+				EF3CC6BF96D9302CDF40B52684D99D59 /* Pods-SendUDP_DataTests.release.xcconfig */,
+			);
+			name = "Pods-SendUDP_DataTests";
+			path = "Target Support Files/Pods-SendUDP_DataTests";
+			sourceTree = "<group>";
+		};
+		D1C79C2CDC0EDA5505185DDB6F8558D9 /* Pods-SendUDP_Data */ = {
+			isa = PBXGroup;
+			children = (
+				CB360F82418F378BF3BE87016751FF16 /* Info.plist */,
+				7D1BF8007691E3386871147FE20E1FCE /* Pods-SendUDP_Data.modulemap */,
+				B12A320E58178A099F7F9D76D81D3433 /* Pods-SendUDP_Data-acknowledgements.markdown */,
+				9F7E79C821996F9077658C6E97ADEB36 /* Pods-SendUDP_Data-acknowledgements.plist */,
+				A27C25FA52219AC2242B42AFDFF2C803 /* Pods-SendUDP_Data-dummy.m */,
+				7944BB7FCD21434E1B1CF596BD826708 /* Pods-SendUDP_Data-frameworks.sh */,
+				7DDD12A09E06A57E5ED0680058B3A2DD /* Pods-SendUDP_Data-resources.sh */,
+				DBF7FB7675805354A40BDCAA1E77394D /* Pods-SendUDP_Data-umbrella.h */,
+				61F40EA3895C104D9BFC39EE38C89EF0 /* Pods-SendUDP_Data.debug.xcconfig */,
+				6188EE1A0A164E5491A1E182FB78D05B /* Pods-SendUDP_Data.release.xcconfig */,
+			);
+			name = "Pods-SendUDP_Data";
+			path = "Target Support Files/Pods-SendUDP_Data";
+			sourceTree = "<group>";
+		};
+		FD062BAFDBCFA371148EEECB3B3AE184 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01DD3A0A71B49FAACD87F9DDBEB6D80E /* Info.plist */,
+				4D0CB38F5508CE0DDA1E809D8C30E218 /* SwiftSocket.modulemap */,
+				5B328F220B5B0B4266E762855E5E58DA /* SwiftSocket.xcconfig */,
+				7ECE370F86C7B1DF357FA951576EEBBB /* SwiftSocket-dummy.m */,
+				CA15CD033532B985395263B8C4EC0791 /* SwiftSocket-prefix.pch */,
+				43B75B87EB79439A4B3DF29E1A293455 /* SwiftSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSocket";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		469F03C0ED7FFA6C0DC59EC3C027DCAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068D90EF3557BCB8F1061C63E20EF15E /* Pods-SendUDP_Data-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F53952BEAF5A8A395814D69557680C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC044D63F406E719E16BE1C536D4E898 /* SwiftSocket-umbrella.h in Headers */,
+				1A03FA69B39B67A395A3C32A5CAC91D8 /* SwiftSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B180674C514FDFD01DE6E6BFD3979800 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1713576E54F76950BE73C47D2B5DDE2 /* Pods-SendUDP_DataTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB91D918F4C236AEFF7D9CFC560F800D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF7DDB36842C46531534A50523EEF79 /* Pods-SendUDP_DataUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3DB43FDDA05B649C826D04EF2E72C1DC /* Pods-SendUDP_DataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FE7AF86A5F17E0870AED64E049947A7 /* Build configuration list for PBXNativeTarget "Pods-SendUDP_DataTests" */;
+			buildPhases = (
+				FF34718CD790ADA40D33CEBB7420269C /* Sources */,
+				9E641809A50FDB9DDFF31DBCD1CA3C58 /* Frameworks */,
+				B180674C514FDFD01DE6E6BFD3979800 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SendUDP_DataTests";
+			productName = "Pods-SendUDP_DataTests";
+			productReference = 2010BC7304DA495769AD0FE2B12F1F03 /* Pods_SendUDP_DataTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		85A3C95EAF3BA707EB1523BD7C0437CD /* Pods-SendUDP_Data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C35A66209A7E4126D10DFF0CC803266 /* Build configuration list for PBXNativeTarget "Pods-SendUDP_Data" */;
+			buildPhases = (
+				A3C1352F9A476BD7DADD65F07585CB72 /* Sources */,
+				2585D9361D23DD555D86861434489DBD /* Frameworks */,
+				469F03C0ED7FFA6C0DC59EC3C027DCAC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A144C4B2E9C9112666873F484FFFF5E8 /* PBXTargetDependency */,
+			);
+			name = "Pods-SendUDP_Data";
+			productName = "Pods-SendUDP_Data";
+			productReference = 97E63EF259863847F5CBDA8B11BC2C93 /* Pods_SendUDP_Data.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F665F3EB2D2137B5E4657D20D6431356 /* SwiftSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC577F184B027455732057BA7EDED145 /* Build configuration list for PBXNativeTarget "SwiftSocket" */;
+			buildPhases = (
+				86B9DD313FFD02AD9EF78B6FB1E96F76 /* Sources */,
+				566F72EBFE0C54AC4A7CC099E02B6D6F /* Frameworks */,
+				84F53952BEAF5A8A395814D69557680C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSocket;
+			productName = SwiftSocket;
+			productReference = 41C00507D0A42F211B582B2E97B2D0EC /* SwiftSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F9027226E9BE592867035877128478B6 /* Pods-SendUDP_DataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032F4A2229C9573EE4A62D06B76D33F3 /* Build configuration list for PBXNativeTarget "Pods-SendUDP_DataUITests" */;
+			buildPhases = (
+				52777F556CA5F9209F71FA29B484F72A /* Sources */,
+				E5EB56885E268F2788C3C83976E827EB /* Frameworks */,
+				BB91D918F4C236AEFF7D9CFC560F800D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SendUDP_DataUITests";
+			productName = "Pods-SendUDP_DataUITests";
+			productReference = 0C7B3303FBC7314C5D3C2DE406B1212E /* Pods_SendUDP_DataUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9D213A29B4502132CB93F4D0E043DE27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85A3C95EAF3BA707EB1523BD7C0437CD /* Pods-SendUDP_Data */,
+				3DB43FDDA05B649C826D04EF2E72C1DC /* Pods-SendUDP_DataTests */,
+				F9027226E9BE592867035877128478B6 /* Pods-SendUDP_DataUITests */,
+				F665F3EB2D2137B5E4657D20D6431356 /* SwiftSocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52777F556CA5F9209F71FA29B484F72A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EBD0E112C62E915E9E07E3B104FEAD /* Pods-SendUDP_DataUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86B9DD313FFD02AD9EF78B6FB1E96F76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110A01B538BC429BE629D2AFD29FDCFF /* Info.plist in Sources */,
+				CBB0DEE67B1F2371C5DBC9DE1A74DD59 /* Result.swift in Sources */,
+				669011D3A4F7DA590B6B64B6366B8875 /* Socket.swift in Sources */,
+				A2E9F1683115B42A376EB70157219BDC /* SwiftSocket-dummy.m in Sources */,
+				48298B485971B89ACEA54C66CB599E53 /* TCPClient.swift in Sources */,
+				17B5D95B8BE3D96DD19AE4AA39831583 /* UDPClient.swift in Sources */,
+				9C9918F4E0A548C851C4A25B7BBC9CB0 /* ytcpsocket.c in Sources */,
+				ED0DC802B40AE0091E5E2B8C9C26E4F5 /* yudpsocket.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3C1352F9A476BD7DADD65F07585CB72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE2F8C523BFF10D680485823FD4EA1E /* Pods-SendUDP_Data-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF34718CD790ADA40D33CEBB7420269C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B80C393CDCF98F29D35E39463D2144 /* Pods-SendUDP_DataTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A144C4B2E9C9112666873F484FFFF5E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSocket;
+			target = F665F3EB2D2137B5E4657D20D6431356 /* SwiftSocket */;
+			targetProxy = 920079318FBF65B8C215A0F13282DB47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		090EE2ACE16B99D0E4728675B4BF1203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C73F536DFB1FE7CEC010FBF6221D6DA5 /* Pods-SendUDP_DataTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SendUDP_DataTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SendUDP_DataTests/Pods-SendUDP_DataTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SendUDP_DataTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A869C8AD5527A46477593D73C48C698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B328F220B5B0B4266E762855E5E58DA /* SwiftSocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0EC93EE4457571E577CCA57C56572C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F40EA3895C104D9BFC39EE38C89EF0 /* Pods-SendUDP_Data.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SendUDP_Data/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SendUDP_Data/Pods-SendUDP_Data.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SendUDP_Data;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0F0636709726278EA36CF8BDA2783D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF3CC6BF96D9302CDF40B52684D99D59 /* Pods-SendUDP_DataTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SendUDP_DataTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SendUDP_DataTests/Pods-SendUDP_DataTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SendUDP_DataTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		287F5C637D00A1CAA1ACA325C9E7BC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6188EE1A0A164E5491A1E182FB78D05B /* Pods-SendUDP_Data.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SendUDP_Data/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SendUDP_Data/Pods-SendUDP_Data.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SendUDP_Data;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76C6911766D9E49CCDE829C9807ADBBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B328F220B5B0B4266E762855E5E58DA /* SwiftSocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4B7007E55E736A3CF6615964E5D2BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C118F1051AEFCDF1F722EDA4C538551 /* Pods-SendUDP_DataUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SendUDP_DataUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SendUDP_DataUITests/Pods-SendUDP_DataUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SendUDP_DataUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D37CC4BC45825A8649436E103AF9A148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E126EFDA6600FA9D41378E85E98FD9B9 /* Pods-SendUDP_DataUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SendUDP_DataUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SendUDP_DataUITests/Pods-SendUDP_DataUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SendUDP_DataUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		032F4A2229C9573EE4A62D06B76D33F3 /* Build configuration list for PBXNativeTarget "Pods-SendUDP_DataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D37CC4BC45825A8649436E103AF9A148 /* Debug */,
+				A4B7007E55E736A3CF6615964E5D2BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C35A66209A7E4126D10DFF0CC803266 /* Build configuration list for PBXNativeTarget "Pods-SendUDP_Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EC93EE4457571E577CCA57C56572C8B /* Debug */,
+				287F5C637D00A1CAA1ACA325C9E7BC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FE7AF86A5F17E0870AED64E049947A7 /* Build configuration list for PBXNativeTarget "Pods-SendUDP_DataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090EE2ACE16B99D0E4728675B4BF1203 /* Debug */,
+				0F0636709726278EA36CF8BDA2783D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC577F184B027455732057BA7EDED145 /* Build configuration list for PBXNativeTarget "SwiftSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A869C8AD5527A46477593D73C48C698 /* Debug */,
+				76C6911766D9E49CCDE829C9807ADBBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
