@@ -48,7 +48,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var front_and_behind_slider: UISlider!
     
     @IBOutlet weak var right_and_left_slider: UISlider!
-    @IBOutlet weak var senddataButton: UIButton!
+    
+    @IBOutlet weak var LED_slider: UISlider!
+  
     private let addr = "192.168.4.1"
     private let port:Int32 = 30000
     private var client: UDPClient?
@@ -57,7 +59,7 @@ class ViewController: UIViewController {
     //private var SendAction_Order
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.senddataButton.addTarget(self, action: #selector(ViewController.SendButton(button:)), for: UIControlEvents.touchUpInside)
+        self.LED_slider.addTarget(self, action: #selector(ViewController.onChange_LED_Slider(sender:)), for: UIControlEvents.valueChanged)
         self.front_and_behind_slider.addTarget(self, action: #selector(ViewController.onChange_fb_Slider(sender: )), for: UIControlEvents.valueChanged)
         self.right_and_left_slider.addTarget(self, action: #selector(ViewController.onChange_lr_Slider(sender: )), for: UIControlEvents.valueChanged)
 
@@ -101,8 +103,9 @@ class ViewController: UIViewController {
     }
     
     //関数ハンドラ
-    func SendButton(button:UIButton){
-        self.SendAction(str: "L", num: 200)
+    func onChange_LED_Slider(sender:UISlider!){
+        print("LEDsender=\(sender.value)")
+        self.SendAction(str: "L", num: Int32(sender.value))
     }
     func onChange_fb_Slider(sender:UISlider!){
         print("fbsender=\(sender.value)")
